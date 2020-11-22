@@ -1,0 +1,12 @@
+# Ignore Mac system files
+.DS_store
+
+# Ignore node_modules folder
+hadoop-3.3.0.tar.gz.sha512
+hadoop-3.3.0
+
+# Ignore sample output from local machine 
+out
+
+# Ignore IDE specifics
+.idea
