@@ -3,15 +3,17 @@ body {
     margin: 0;
 }
 
-/* Style the header */
-.header {
-    padding: 80px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
+#profiler_icon img {
+    width: 50px;
+    height: 50px;
+    margin: 2px 4px 2px 2px;
 }
 
-/* Increase the font size of the h1 element */
-.header h1 {
-    font-size: 40px;
+.bg_hadoop_green {
+    background-color: #5fa33e;
+}
+
+.navbar-nav > .active > a {
+    text-decoration: underline;
+    font-weight: bold;
 }
