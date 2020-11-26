@@ -9,137 +9,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div class="container-fluid">
+    <div class="container-fluid">
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg_hadoop_green">
-        <a class="navbar-brand text-light" id="profiler_icon" href="#">
-            <img src="img/hadoop_icon.png">
-            Hadoop MRProfiler
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" id="profiler_icon" href="#">
+                <img src="img/hadoop_icon.png">
+                Hadoop MRProfiler
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link text-light" href="#">Overview<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Stats</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Diagrams
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Diagram 1</a>
-                        <a class="dropdown-item" href="#">Diagram 2</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Diagram 3 After Divider</a>
-                        <a class="dropdown-item" href="#">Diagram 4 After Divider</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Overview<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Diagrams
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Diagram 1</a>
+                            <a class="dropdown-item" href="#">Diagram 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Diagram 3 After Divider</a>
+                            <a class="dropdown-item" href="#">Diagram 4 After Divider</a>
 
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- Overview Sections -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title font-weight-light">Overview</h1>
+                        <p class="card-text">here will be some description for the table</p>
+
+                        <!-- Overview Summary Table -->
+                        <div class="container-fluid col-md-2"></div>
+                        <div class="container-fluid col-md-8">
+                            <table class="table table-striped table-hover text-center">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Number of Directory in HDFS</th>
+                                        <td class="num-of-dirs"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Number of Files in HDFS</th>
+                                        <td class="num-of-files"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Space Used (bytes, make it KB/MB/GB when needed later)</th>
+                                        <td class="space-used"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="container-fluid col-md-2"></div>
+
+                        <!-- Directory Tree Section -->
+                        <div class="container-fluid col-md-2"></div>
+                        <div class="container-fluid col-md-8">
+                            <div class="directory-tree">
+                                <p>Directory Tree Comes In Here</p>
+                            </div>
+                        </div>
+                        <div class="container-fluid col-md-2"></div>
                     </div>
-                </li>
-
-            </ul>
-
+                </div>
+            </div>
+            <div class="col-md-2"></div>
         </div>
-    </nav>
 
-    <!-- Overview Sections -->
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title font-weight-light">Overview</h1>
-                    <p class="card-text">WITH A TABLE LIKE NAME-NODE PAGE TOP SECTION</p>
+        <!-- Diagram One and Two -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title font-weight-light">Diagram 1</h1>
+                        <p class="card-text">WITH TEXT SUMMARY</p>
+                        <p class="card-text">INSERT DIAGRAM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title font-weight-light">Diagram 2</h1>
+                        <p class="card-text">WITH TEXT SUMMARY</p>
+                        <p class="card-text">INSERT DIAGRAM</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Additional Statistics Sections -->
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title font-weight-light">Stats</h1>
-                    <p class="card-text">WITH TEXT SUMMARY</p>
-                    <p class="card-text">WITH TABLE SUMMARY IF NEEDED</p>
+        <!-- Diagram Three and Four -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title font-weight-light">Diagram 3</h1>
+                        <p class="card-text">WITH TEXT SUMMARY</p>
+                        <p class="card-text">INSERT DIAGRAM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title font-weight-light">Diagram 4</h1>
+                        <p class="card-text">WITH TEXT SUMMARY</p>
+                        <p class="card-text">INSERT DIAGRAM</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Diagram One -->
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title font-weight-light">Diagram 1</h1>
-                    <p class="card-text">WITH TEXT SUMMARY</p>
-                    <p class="card-text">INSERT DIAGRAM</p>
-                </div>
-            </div>
+
+        <!-- Footer Section -->
+        <footer class="card-footer text-muted">Jiaxin Su @ UCLA | CS 239 Big Data System | Fall 2020</footer>
+
+        <!-- Test button for AJAX call for content summary - SUCCESS!! Can reuse to test API calls
+        <div class="contentSummary">
+            <button>Send an HTTP GET request to a page and get the result back</button>
         </div>
+        -->
     </div>
-
-    <!-- Diagram Two -->
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title font-weight-light">Diagram 2</h1>
-                    <p class="card-text">WITH TEXT SUMMARY</p>
-                    <p class="card-text">INSERT DIAGRAM</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Diagram Three -->
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title font-weight-light">Diagram 3</h1>
-                    <p class="card-text">WITH TEXT SUMMARY</p>
-                    <p class="card-text">INSERT DIAGRAM</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Diagram Four -->
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title font-weight-light">Diagram 4</h1>
-                    <p class="card-text">WITH TEXT SUMMARY</p>
-                    <p class="card-text">INSERT DIAGRAM</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer Section -->
-    <footer class="card-footer text-muted">Jiaxin Su @ UCLA | CS 239 Big Data System | Fall 2020</footer>
-
-    <!-- Test button for AJAX call for content summary - SUCCESS!! Can reuse to test API calls
-    <div class="contentSummary">
-        <button>Send an HTTP GET request to a page and get the result back</button>
-    </div>
-    -->
-</div>
 
     <!-- Customized JavaScript Files Needed -->
-    <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 
 </body>
 </html>
