@@ -4,8 +4,8 @@ USE tutorial_db;
 
 CREATE TABLE IF NOT EXISTS  tutorial_db.order_json
 (  id INT,
-   datemark String,
-   status String
+   description String,
+   type String
 )
 ROW FORMAT delimited
 FIELDS TERMINATED BY ','

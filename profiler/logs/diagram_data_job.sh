@@ -40,14 +40,14 @@ do
   FILE_LOCATION="${LOG_DIR}${FILE}"
   echo "Handling the file at ${FILE_LOCATION}..."
 
-  # for testing purpose, we set it to 5 so that we can have 5 data points in
+  # for testing purpose, we set it to 10 so that we can have 5 data points in
   # in the diagrams. Can change this based on our progress on the diagrams
   #
   # for each round, the script calls the WebHDFS API for response and append
   # the response to the corresponding diagram log file.
   # The script will call the API every 5 seconds for now for testing purpose
   #
-  for i in {1..5}
+  for i in {1..10}
   do
     curl "http://localhost:9870/webhdfs/v1/user/hive?user.name=hadoop&op=GETCONTENTSUMMARY" >> ${FILE_LOCATION}
     echo "" >> ${FILE_LOCATION}
