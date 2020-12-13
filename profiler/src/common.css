@@ -17,3 +17,11 @@ body {
     text-decoration: underline;
     font-weight: bold;
 }
+
+.width-83-prcntge {
+    width: 83%;
+}
+
+.width-63-prcntge {
+    width: 63%;
+}
