@@ -1,4 +1,6 @@
 $(window).on('load', function () {
+
+    // for directory content
     $.ajax({
         url: 'http://localhost:9870/webhdfs/v1/user/hive/?user.name=hadoop&op=GETCONTENTSUMMARY&format=json',
         method: 'GET',
@@ -14,6 +16,68 @@ $(window).on('load', function () {
             $('.num-of-dirs').html(data['ContentSummary']['directoryCount']);
             $('.num-of-files').html(data['ContentSummary']['fileCount']);
             $('.space-used').html(data['ContentSummary']['length']);
+        },
+        error(xhr, textStatus, errorThrown) {
+            console.log(xhr);
+            console.log(textStatus);
+            console.log(errorThrown);
+        }
+    });
+
+    // for resource manager: http://localhost:8088/ws/v1/cluster/info
+    $.ajax({
+        url: 'http://localhost:8088/ws/v1/cluster/info?user.name=hadoop',
+        method: 'GET',
+        crossDomain: true,
+        dataType: 'json',
+        beforeSend: function (request) {
+            request.setRequestHeader('Access-Control-Allow-Origin', '*');
+            request.setRequestHeader('Accept', 'application/json; charset=utf-8');
+            request.setRequestHeader('Content-Type', 'application/json');
+        },
+        success: function (data) {
+            console.log(data);
+            $('.cluster-id').html(data['clusterInfo']['id']);
+            $('.cluster-state').html(data['clusterInfo']['state']);
+            $('.cluster-start-time').html(data['clusterInfo']['startedOn']);
+            $('.cluster-ha-state').html(data['clusterInfo']['haState']);
+            $('.rm-state-store-name').html(data['clusterInfo']['rmStateStoreName']);
+            $('.rm-version').html(data['clusterInfo']['resourceManagerVersion']);
+            $('.rm-build-version').html(data['clusterInfo']['resourceManagerBuildVersion']);
+            $('.rm-version-built-on').html(data['clusterInfo']['resourceManagerVersionBuiltOn']);
+            $('.hadoop-version').html(data['clusterInfo']['hadoopVersion']);
+            $('.hadoop-build-version').html(data['clusterInfo']['hadoopBuildVersion']);
+            $('.hadoop-version-built-on').html(data['clusterInfo']['hadoopVersionBuiltOn']);
+        },
+        error(xhr, textStatus, errorThrown) {
+            console.log(xhr);
+            console.log(textStatus);
+            console.log(errorThrown);
+        }
+    });
+
+    // for node manager: http://localhost:8042/ws/v1/node/info
+    $.ajax({
+        url: 'http://localhost:8042/ws/v1/node/info?user.name=hadoop',
+        method: 'GET',
+        crossDomain: true,
+        dataType: 'json',
+        beforeSend: function (request) {
+            request.setRequestHeader('Access-Control-Allow-Origin', '*');
+            request.setRequestHeader('Accept', 'application/json; charset=utf-8');
+            request.setRequestHeader('Content-Type', 'application/json');
+        },
+        success: function (data) {
+            console.log(data);
+            $('.node-id').html(data['nodeInfo']['id']);
+            $('.node-healthy-status').html(data['nodeInfo']['nodeHealthy']);
+            $('.node-host-name').html(data['nodeInfo']['nodeHostName']);
+            $('.nm-startup-time').html(data['nodeInfo']['nmStartupTime']);
+            $('.last-node-update-time').html(data['nodeInfo']['lastNodeUpdateTime']);
+            $('.nm-version').html(data['nodeInfo']['nodeManagerVersion']);
+            $('.nm-build-version').html(data['nodeInfo']['nodeManagerBuildVersion']);
+            $('.nm-version-built-on').html(data['nodeInfo']['nodeManagerVersionBuiltOn']);
+
         },
         error(xhr, textStatus, errorThrown) {
             console.log(xhr);

@@ -83,6 +83,7 @@
                             </div>
                         </div>
                         <div class="container-fluid col-md-2"></div>
+
                     </div>
                 </div>
             </div>
@@ -91,25 +92,178 @@
 
         <!-- Diagram One and Two -->
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <h1 class="card-title font-weight-light">Diagram 1</h1>
-                        <p class="card-text">WITH TEXT SUMMARY</p>
-                        <p class="card-text">INSERT DIAGRAM</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h1 class="card-title font-weight-light">Diagram 2</h1>
-                        <p class="card-text">WITH TEXT SUMMARY</p>
-                        <p class="card-text">INSERT DIAGRAM</p>
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <table class="table table-borderless w-auto">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Cluster Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Cluster ID</th>
+                                            <td class="cluster-id"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">State</th>
+                                            <td class="cluster-state"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Start Time</th>
+                                            <td class="cluster-start-time"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">HA State</th>
+                                            <td class="cluster-ha-state"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table table-borderless w-auto">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Node Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Node ID</th>
+                                            <td class="node-id"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Healthy Status</th>
+                                            <td class="node-healthy-status"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Host Name</th>
+                                            <td class="node-host-name"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Node Manager Startup Time</th>
+                                            <td class="nm-startup-time"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Last Node Update Time</th>
+                                            <td class="last-node-update-time"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <table class="table table-borderless w-auto">
+                                    <thead>
+                                    <tr>
+                                        <th colspan="2">Resource Manager Version</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Current Version</th>
+                                            <td class="rm-version text-center"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Build Version</th>
+                                            <td class="rm-build-version"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Version Built-On</th>
+                                            <td class="rm-version-built-on"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table table-borderless w-auto">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Node Manager Version</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Current Version</th>
+                                            <td class="nm-version"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Build Version</th>
+                                            <td class="nm-build-version"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Version Built-On</th>
+                                            <td class="nm-version-built-on"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-borderless w-auto">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">Resource Manager State Store Name</th>
+                                        <td class="rm-state-store-name"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-borderless w-auto">
+                            <thead>
+                            <tr>
+                                <th colspan="2">Hadoop Version</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">Current Version</th>
+                                <td class="hadoop-version"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Build Version</th>
+                                <td class="hadoop-build-version"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Version Built-On</th>
+                                <td class="hadoop-version-built-on"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Diagram Three and Four -->
         <div class="row">
