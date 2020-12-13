@@ -85,6 +85,63 @@ $(window).on('load', function () {
             console.log(errorThrown);
         }
     });
+
+    // line chart
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ['19:20', '19:21', '19:22', '19:23', '19:24', '19:25', '19:26', '19:27', '19:28', '19:29'],
+            datasets: [{
+                label: 'Capacity Remaining',
+                backgroundColor: 'rgb(54, 162, 235, 0.2)',
+                borderColor: 'rgb(153, 102, 255, 0.2)',
+                data: [20000, 12270, 12270, 12270, 8955, 8955, 8955, 12270, 12270, 12270]
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+
+    var ctx2 = document.getElementById('myChart2').getContext('2d');
+    var myChart2 = new Chart(ctx2, {
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ['19:20', '19:21', '19:22', '19:23', '19:24', '19:25', '19:26', '19:27', '19:28', '19:29'],
+            datasets: [{
+                label: 'Capacity Consumed',
+                backgroundColor: 'rgb(75, 192, 192, 0.2)',
+                borderColor: 'rgb(255, 159, 64, 0.2)',
+                data: [0, 7730, 7730, 7730, 11045, 11045, 11045, 7730, 7730, 7730]
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+
+
 });
 
 function getDirectoryFileInfo(urlSuffix) {
@@ -115,8 +172,8 @@ function getDirectoryFileInfo(urlSuffix) {
 }
 
 function generateDirectoryTree() {
-    console.log("Generating Directory Tree...");
-    var dirFileQueue = [];
+    // console.log("Generating Directory Tree...");
+    // var dirFileQueue = [];
 
     /**
      * TODO:
@@ -131,6 +188,8 @@ function generateDirectoryTree() {
 }
 
 
+
+
 $(document).ready(function() {
 
     // codes for testing js working with the front-end
@@ -139,5 +198,6 @@ $(document).ready(function() {
     // });
 
     generateDirectoryTree();
+    getLineChart()
 
 });

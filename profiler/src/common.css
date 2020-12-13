@@ -25,3 +25,12 @@ body {
 .width-63-prcntge {
     width: 63%;
 }
+
+canvas {
+    width:600px !important;
+    height:400px !important;
+}
+
+.diagram_margin {
+    margin: 40px 20px 40px 20px;
+}
