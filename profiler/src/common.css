@@ -34,3 +34,11 @@ canvas {
 .diagram_margin {
     margin: 40px 20px 40px 20px;
 }
+
+.diagram_margin_with_table {
+    margin: 0 20px 40px 20px;
+}
+
+.table_margin {
+    margin: 60px 20px 20px 20px;
+}

@@ -141,7 +141,86 @@ $(window).on('load', function () {
         }
     });
 
+    var ctx3 = document.getElementById('myChart3').getContext('2d');
+    var myChart3 = new Chart(ctx3, {
+        type: 'line',
 
+        // The data for our dataset
+        data: {
+            labels: ['19:20', '19:21', '19:22', '19:23', '19:24', '19:25', '19:26', '19:27', '19:28', '19:29'],
+            datasets: [{
+                label: 'Throughput Over Time',
+                backgroundColor: 'rgb(255, 99, 132, 0.2)',
+                borderColor: 'rgb(255, 206, 86, 0.2)',
+                data: [0, 7730, 7730, 7730, 11045, 11045, 11045, 7730, 7730, 7730]
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+
+    var ctx4 = document.getElementById('myChart4').getContext('2d');
+    var myChart4 = new Chart(ctx4, {
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ['19:20', '19:21', '19:22', '19:23', '19:24', '19:25', '19:26', '19:27', '19:28', '19:29'],
+            datasets: [{
+                label: 'Files Total',
+                backgroundColor: 'rgb(255, 206, 86, 0.2)',
+                borderColor: 'rgb(255, 99, 132, 0.2)',
+                data: [0, 7730, 7730, 7730, 11045, 11045, 11045, 7730, 7730, 7730]
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+
+    var ctx5 = document.getElementById('myChart5').getContext('2d');
+    var myChart5 = new Chart(ctx5, {
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ['19:20', '19:21', '19:22', '19:23', '19:24', '19:25', '19:26', '19:27', '19:28', '19:29'],
+            datasets: [{
+                label: 'Total Load',
+                backgroundColor: 'rgb(153, 102, 255, 0.2)',
+                borderColor: 'rgb(75, 192, 192, 0.2)',
+                data: [0, 7730, 7730, 7730, 11045, 11045, 11045, 7730, 7730, 7730]
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
 });
 
 function getDirectoryFileInfo(urlSuffix) {
