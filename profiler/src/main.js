@@ -15,7 +15,9 @@ $(window).on('load', function () {
             console.log(data);
             $('.num-of-dirs').html(data['ContentSummary']['directoryCount']);
             $('.num-of-files').html(data['ContentSummary']['fileCount']);
-            $('.space-used').html(data['ContentSummary']['length']);
+            let space_used = parseInt(data['ContentSummary']['length'])/Math.pow(10, 9);
+            console.log(space_used);
+            $('.space-used').html(space_used.toString());
         },
         error(xhr, textStatus, errorThrown) {
             console.log(xhr);
@@ -254,6 +256,19 @@ $(document).ready(function() {
                 yAxes: [{
                     ticks: {
                         beginAtZero:true
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Megabyte(s)'
+                    }
+                }],
+                xAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Timestamp'
                     }
                 }]
             }
@@ -331,6 +346,19 @@ $(document).ready(function() {
                 yAxes: [{
                     ticks: {
                         beginAtZero:true
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Megabyte(s)'
+                    }
+                }],
+                xAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Timestamp'
                     }
                 }]
             }
@@ -408,6 +436,19 @@ $(document).ready(function() {
                 yAxes: [{
                     ticks: {
                         beginAtZero:true
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'MB per Second'
+                    }
+                }],
+                xAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Timestamp'
                     }
                 }]
             }
@@ -485,6 +526,19 @@ $(document).ready(function() {
                 yAxes: [{
                     ticks: {
                         beginAtZero:true
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'File Count(s)'
+                    }
+                }],
+                xAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Timestamp'
                     }
                 }]
             }
@@ -562,6 +616,19 @@ $(document).ready(function() {
                 yAxes: [{
                     ticks: {
                         beginAtZero:true
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Megabyte(s)'
+                    }
+                }],
+                xAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Timestamp'
                     }
                 }]
             }
