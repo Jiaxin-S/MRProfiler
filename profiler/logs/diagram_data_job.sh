@@ -11,7 +11,7 @@ echo "Current logs directory is: $LOG_DIR"
 
 # here are the data log files for corresponding diagrams
 # can add more files as we get more data and create more diagrams
-DIAGRAM_LOG_FILES="diagram_1.txt diagram_2.txt"
+DIAGRAM_LOG_FILES="diagram_1gb.txt"
 
 # introduction print statement for users
 echo "Start Getting Data from HDFS..."
@@ -47,11 +47,13 @@ do
   # the response to the corresponding diagram log file.
   # The script will call the API every 5 seconds for now for testing purpose
   #
-  for i in {1..10}
+  for i in {1..200}
   do
-    curl "http://localhost:9870/webhdfs/v1/user/hive?user.name=hadoop&op=GETCONTENTSUMMARY" >> ${FILE_LOCATION}
+#    date +"%T " >> ${FILE_LOCATION}
+#    curl "http://localhost:9870/webhdfs/v1/user/hive?user.name=hadoop&op=GETCONTENTSUMMARY" >> ${FILE_LOCATION}
+    { date +"%T"; curl "http://localhost:9870/webhdfs/v1/user/hive?user.name=hadoop&op=GETCONTENTSUMMARY"; } | tr "\n" " " >> ${FILE_LOCATION}
     echo "" >> ${FILE_LOCATION}
-    sleep 5s # Waits 30 seconds.
+    sleep 0.1s # Waits 5 seconds.
   done
 
 done

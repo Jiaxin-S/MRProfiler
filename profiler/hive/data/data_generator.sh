@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CURR_FILE="1_mb.txt"
+CURR_FILE="1_gb.txt"
 _cwd="$PWD"
 echo "Current working directory is: $_cwd"
 
@@ -29,7 +29,21 @@ echo "Handling the file at ${FILE_LOCATION}..."
 # the response to the corresponding diagram log file.
 # The script will call the API every 5 seconds for now for testing purpose
 #
-for i in {1..10000000}
+#
+#1..1015000
+#1015001..2030000
+#2030001..3045000
+#3045001..4060000
+#4060001..5075000
+#5075001..6090000
+#6090001..7105000
+#7105001..8120000
+#8120001..9135000
+#9135001..10150000
+#
+#2020-12-14T18:47:54,849
+#Time taken: 13.835 seconds on Hive
+for i in {9135001..10150000}
 do
   echo "$i,test_description_qwertyuiopasdfghjklruiopasdfghjklzxcvbnm,test_type_qwertyuiopasdfghjklzxcvbnm" >> ${FILE_LOCATION}
 done
