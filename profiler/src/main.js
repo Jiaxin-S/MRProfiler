@@ -15,7 +15,7 @@ $(window).on('load', function () {
             console.log(data);
             $('.num-of-dirs').html(data['ContentSummary']['directoryCount']);
             $('.num-of-files').html(data['ContentSummary']['fileCount']);
-            let space_used = parseInt(data['ContentSummary']['length'])/Math.pow(10, 9);
+            let space_used = parseInt(data['ContentSummary']['length'])/Math.pow(10, 9)*2;
             console.log(space_used);
             $('.space-used').html(space_used.toString());
         },
@@ -439,7 +439,7 @@ $(document).ready(function() {
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'MB per Second'
+                        labelString: 'Megabyte(s)'
                     }
                 }],
                 xAxes: [{
