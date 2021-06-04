@@ -1,0 +1,40 @@
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:24.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":3,"length":7730,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":7730,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:25.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":106623,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":106623,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:26.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:28.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:29.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:30.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:31.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:32.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:33.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:34.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:35.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:36.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:37.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:38.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:39.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:40.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:41.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:42.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:43.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
+{ "create": { } }
+{ "@timestamp": "2021-06-03T15:58:44.000Z", "event": { "original": "{"ContentSummary":{"directoryCount":8,"ecPolicy":"","fileCount":4,"length":202201,"quota":-1,"snapshotDirectoryCount":0,"snapshotFileCount":0,"snapshotLength":0,"snapshotSpaceConsumed":0,"spaceConsumed":202201,"spaceQuota":-1,"typeQuota":{}}}" } }
