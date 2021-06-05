@@ -1,4 +1,69 @@
 $(window).on('load', function () {
+    esUsername = "elastic"
+    esPassword = "ndtPHQNndwjmBiCMRHE5FYAD"
+//    query = '{ "query": { "range": { "@timestamp": { "gte": "2021-05-05", "lt": "2021-07-08" } } }, "fields": [ "@timestamp", "event.directoryCount", "event.fileCount", "event.length", "event.spaceConsumed"], "_source": false, "sort": [ { "@timestamp": "desc" } ] }',
+//
+//    var query = {
+//        query: {
+//            filtered: {
+//                filter: {
+//                    term: { "name.raw": category }
+//                }
+//            }
+//        }
+//    }
+
+    var query = {
+        "query": {
+            "range": {
+                "@timestamp": {
+                    "gte": "2021-05-05",
+                    "lt": "2021-07-08"
+                }
+            }
+        },
+        "fields": [
+            "@timestamp",
+            "event.directoryCount",
+            "event.fileCount",
+            "event.length",
+            "event.spaceConsumed"
+        ],
+        "_source": "false",
+        "sort": [ { "@timestamp": "desc" } ]
+        }
+
+
+    // for getting quick look data from Elastic Search
+    $.ajax({
+        url: 'https://i-o-optimized-deployment-9946ba.es.us-west-1.aws.found.io:9243/logs-my_app-default/_search?size=1',
+        method: 'GET',
+        data: {
+            source: JSON.stringify(query),
+            source_content_type: "application/json"
+        },
+        crossDomain: true,
+        dataType: 'json',
+        beforeSend: function (request) {
+            request.setRequestHeader ("Authorization", "Basic " + btoa(esUsername + ":" + esPassword));
+            request.setRequestHeader('Access-Control-Allow-Origin', '*');
+            request.setRequestHeader('Accept', 'application/json; charset=utf-8');
+            request.setRequestHeader('Content-Type', 'application/json');
+        },
+        success: function (data) {
+            console.log(data);
+//            $('.num-of-dirs').html(data['ContentSummary']['directoryCount']);
+//            $('.num-of-files').html(data['ContentSummary']['fileCount']);
+//            let space_used = parseInt(data['ContentSummary']['length'])/Math.pow(10, 9)*2;
+//            console.log(space_used);
+//            $('.space-used').html(space_used.toString());
+        },
+        error(xhr, textStatus, errorThrown) {
+            console.log(xhr);
+            console.log(textStatus);
+            console.log(errorThrown);
+        }
+    });
 
     // for directory content
     $.ajax({
